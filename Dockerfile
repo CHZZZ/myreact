@@ -1,4 +1,4 @@
 FROM nginx
 #file author
 MAINTAINER tencentcloudccs
-ADD ./ /usr/share/nginx/html
+ADD ./dist /usr/share/nginx/html
