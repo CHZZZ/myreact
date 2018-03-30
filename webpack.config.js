@@ -17,6 +17,10 @@ module.exports = {
             options: { minimize: true }
           }
         ]
+      },
+      {
+        test: /\.css$/,
+        loader: "style-loader!css-loader"        
       }
     ]
   },
@@ -32,8 +36,6 @@ module.exports = {
     port: 8080,
     inline:true,
     historyApiFallback: true,
-    open:{
-      "type":false
-    }
+    open:false
 }
 };
